@@ -1,0 +1,20 @@
+#+TITLE: Advent of Code Solutions in Julia
+
+I'm just a Julia beginner but I try to implement the solutions to http://adventofcode.com
+in order to challenge me and to learn some Julia along the way. The problems are not meant
+to be most efficient or clear. But I'm at least attempting to be reasonable and idiomatic.
+Since I hardly know the Julia idioms I appreciate any feedback from experienced Julia
+developers.
+
+Currently the scripts are only tested with Julia 0.3.6. Most of them can be called by
+providing the input to stdin:
+
+#+begin_src sh
+$ julia day1-part1.jl <input1
+#+end_src
+
+Currently the only exception is Day 4 which expects its input as a parameter:
+
+#+begin_src sh
+$ julia day4-part2-var1.jl yzbqklnj
+#+end_src
