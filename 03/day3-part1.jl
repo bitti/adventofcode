@@ -1,11 +1,11 @@
 # Starting position
 p = [0 0]
 
-const directions = [
+const directions = Dict(
     '^' => [ 1  0],
     '>' => [ 0  1],
     'v' => [-1  0],
-    '<' => [ 0 -1]]
+    '<' => [ 0 -1])
 
 # Starting house (wrap position inside a tuple to prevent destructuring)
 const visited = Set((p,))

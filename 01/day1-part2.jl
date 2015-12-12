@@ -1,25 +1,14 @@
-# Fetch input
-const bytes = readbytes(STDIN)
+left = right = 0
 
-function get_first_basement_counter()
-    step = 1
-    function get_counter()
-        step
-    end,
-    function count_to_first_basement(a, b)
-        if a == -1
-            -1
-        else
-            step += 1
-            a + b
-        end
+function first_basement_p(brace)
+    global left, right
+    
+    if brace == ')'
+        right += 1
+    else
+        left += 1
     end
+    left < right
 end
 
-step, counter = get_first_basement_counter()
-
-# Surely not the most efficient way to iterate over everything, but a nice way to try out
-# closures and keep the solution similar to part1
-reduce(counter, int8(bytes&1 * -2 + 1))
-
-println(step())
+println(findfirst(first_basement_p, readbytes(STDIN)))

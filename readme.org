@@ -6,8 +6,8 @@ to be most efficient or clear. But I'm at least attempting to be reasonable and 
 Since I hardly know the Julia idioms I appreciate any feedback from experienced Julia
 developers.
 
-Currently the scripts are only tested with Julia 0.3.6. Most of them can be called by
-providing the input to stdin:
+Currently the scripts are only tested with Julia 0.4.1 and 0.4.2. Most of them can be
+called by providing the input to stdin:
 
 #+begin_src sh
 $ julia day1-part1.jl <input1

@@ -1,5 +1,5 @@
 function ribbon_length(str)
-    dim = int(split(str, 'x'))
+    dim = [parse(Int, s) for s = split(str, 'x')]
 
     (sum(dim) - maximum(dim)) * 2 + reduce(*, dim)
 end
