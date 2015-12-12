@@ -1,6 +1,6 @@
 const format = r"(turn )?(on|off|toggle) (\d+),(\d+) \w+ (\d+),(\d+)"
 
-lights = zeros(Uint, 1000, 1000)
+const lights = zeros(Uint, 1000, 1000)
 
 for instruction in readlines(STDIN)
     _, action, x1, y1, x2, y2 = match(format, instruction).captures

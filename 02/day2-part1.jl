@@ -1,4 +1,4 @@
-inf3 = diagm(fill(Inf, 3))
+const inf3 = diagm(fill(Inf, 3))
 
 function wrapping_paper_area(str)
     dim = int(split(str, 'x'))

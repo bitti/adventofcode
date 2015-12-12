@@ -1,5 +1,5 @@
 # Fetch input
-bytes = readbytes(STDIN)
+const bytes = readbytes(STDIN)
 
 function get_first_basement_counter()
     step = 1

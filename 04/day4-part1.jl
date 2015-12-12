@@ -1,4 +1,4 @@
-key = ARGS[1]
+const key = ARGS[1]
 
 nounce = 1
 
