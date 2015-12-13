@@ -13,7 +13,8 @@ called by providing the input to stdin:
 $ julia day1-part1.jl <input1
 #+end_src
 
-Currently the only exception is Day 4 which expects its input as a parameter:
+Currently the only exceptions are Day 4 and 10 which are expecting its input as a
+parameter like this:
 
 #+begin_src sh
 $ julia day4-part2-var1.jl yzbqklnj
