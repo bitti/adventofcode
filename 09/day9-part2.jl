@@ -9,7 +9,7 @@ for line in readlines(STDIN)
     push!(locations, loc1, loc2)
 end
 
-function find_min(location, remaining_locations, distance)
+function find_max(location, remaining_locations, distance)
     if isempty(remaining_locations)
         return distance
     end
@@ -17,7 +17,7 @@ function find_min(location, remaining_locations, distance)
     maximum(map(remaining_locations) do next_loc
         remaining = copy(remaining_locations)
         pop!(remaining, next_loc)
-        find_min(next_loc, remaining, distance + distances[location => next_loc])
+        find_max(next_loc, remaining, distance + distances[location => next_loc])
     end)
 end
 
