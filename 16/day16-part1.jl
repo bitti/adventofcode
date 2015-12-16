@@ -18,5 +18,3 @@ for input in readlines(STDIN)
         println(n)
     end    
 end
-
-    

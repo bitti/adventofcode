@@ -14,17 +14,16 @@ const detection = Dict(
 
 for input in readlines(STDIN)
     n, f1, v1, f2, v2, f3, v3 = match(format, input).captures
-    v1, v2, v3 = map(parse, [v1 v2 v3])
-    if all(zip([f1 f2 f3], [v1 v2 v3])) do p
-        f, v = p
-        if f == "cat" || f == "trees"
-            detection[f1] < 1
-        elseif f == "pomeranians" || f == "goldfish"
-            detection[f] > v
+    if map([f1 f2 f3], map(parse, [v1 v2 v3])) do f, v
+        op = if f in ["cat", "trees"]
+            <
+        elseif f in ["pomeranians", "goldfish"]
+            >
         else
-            detection[f] == v
+            ==
         end
-    end
+        op(detection[f], v)
+    end |> all
         println(n)
     end
 end
