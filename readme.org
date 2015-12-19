@@ -1,10 +1,10 @@
 #+TITLE: Advent of Code Solutions in Julia
 
 I'm just a Julia beginner but I try to implement the solutions to http://adventofcode.com
-in order to challenge me and to learn some Julia along the way. The problems are not meant
-to be most efficient or clear. But I'm at least attempting to be reasonable and idiomatic.
-Since I hardly know the Julia idioms I appreciate any feedback from experienced Julia
-developers.
+in order to challenge me and to learn some Julia along the way. The solutions are not
+meant to be most efficient or clear. But I'm at least attempting to be reasonable and
+idiomatic. Since I hardly know the Julia idioms I appreciate any feedback from experienced
+Julia developers.
 
 Currently the scripts are only tested with Julia 0.4.1 and 0.4.2. Most of them can be
 called by providing the input to stdin:
@@ -13,9 +13,14 @@ called by providing the input to stdin:
 $ julia day1-part1.jl <input1
 #+end_src
 
-Currently the only exceptions are Day 4, 10 and 11 which are expecting its input as a
-parameter like this:
+Exceptions are Day 4, 10 and 11 which are expecting its input as a parameter like this:
 
 #+begin_src sh
 $ julia day4-part2-var1.jl yzbqklnj
+#+end_src
+
+and Day 14 and 17 which are expecting both of the above
+
+#+begin_src sh
+$ julia day14-part1.jl 2503 <input14
 #+end_src
