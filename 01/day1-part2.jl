@@ -1,6 +1,6 @@
 left = right = 0
 
-function first_basement_p(brace)
+function basement_p(brace)
     global left, right
     
     if brace == ')'
@@ -11,4 +11,4 @@ function first_basement_p(brace)
     left < right
 end
 
-println(findfirst(first_basement_p, readbytes(STDIN)))
+println(findfirst(basement_p, readbytes(STDIN)))
