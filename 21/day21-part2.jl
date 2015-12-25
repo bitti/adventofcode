@@ -4,9 +4,9 @@ Armor: (\d+)"m
 const boss_attributes = map(parse, match(format, readall(STDIN)).captures)
 
 immutable Item
-    cost::Int
-    damage::Int
-    armor::Int
+    cost::UInt
+    damage::UInt
+    armor::UInt
 end
 
 type Fighter
@@ -54,7 +54,7 @@ function cost(items::Item...)
     sum(i -> i.cost, items)
 end
 
-costs = 0
+costs = typemin(UInt)
 
 for w in weapons, a in armors, (r1, r2) in combinations(rings, 2)
     player = Fighter(100, 0, 0)

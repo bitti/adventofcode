@@ -54,7 +54,7 @@ function cost(items::Item...)
     sum(i -> i.cost, items)
 end
 
-costs = 2^31
+costs = typemax(UInt)
 
 for w in weapons, a in armors, (r1, r2) in combinations(rings, 2)
     player = Fighter(100, 0, 0)
