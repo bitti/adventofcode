@@ -16,4 +16,4 @@ function fill(rest, volume)
     end
 end
 
-println(sum(Task(() -> fill(containers, volume))))
+println(sum(@task fill(containers, volume)))
