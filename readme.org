@@ -1,6 +1,6 @@
 #+TITLE: Advent of Code Solutions in Julia
 
-I'm just a Julia beginner but I try to implement the solutions to http://adventofcode.com
+I'm just a Julia beginner but I try to implement the solutions to http://adventofcode.com/2015
 in order to challenge me and to learn some Julia along the way. The solutions are not
 meant to be most efficient or clear. But I'm at least attempting to be reasonable and
 idiomatic. Since I hardly know the Julia idioms I appreciate any feedback from experienced
